@@ -1,0 +1,34 @@
+{
+  "name": "span-typescript-example",
+  "version": "1.0.0",
+  "description": "A repo containing examples on how to integrate towards the IoT platform Span",
+  "main": "index.js",
+  "scripts": {
+    "example-1": "tsx 1-setting-up-the-client",
+    "example-2": "tsx 2-fetching-data",
+    "example-3": "tsx 3-streaming-data",
+    "example-4": "tsx 4-storing-and-streaming-data"
+  },
+  "keywords": [
+    "span",
+    "iot",
+    "example"
+  ],
+  "engines": {
+    "node": ">=15"
+  },
+  "author": "Per Kristian Kummermo",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@lab5e/ts-fetch-spanapi": "^4.2.4",
+    "date-fns": "^2.29.3",
+    "mqtt": "^4.3.7",
+    "node-fetch": "^3.2.10",
+    "sqlite3": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.4",
+    "tsx": "^3.10.1",
+    "typescript": "^4.8.4"
+  }
+}
