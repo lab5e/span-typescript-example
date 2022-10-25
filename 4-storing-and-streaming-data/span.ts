@@ -89,7 +89,6 @@ export const listCollectionData = async (
   let fetchUntil = until;
 
   while (fetchMore) {
-    const beforeFetch = new Date();
     const fetchedData = await collectionsClient
       .listCollectionData({
         collectionId: collectionId,
@@ -98,12 +97,6 @@ export const listCollectionData = async (
         start: format(since, "T"),
       })
       .then((result) => result.data || []);
-
-    console.log(
-      `Fetch took from '${since}' to '${fetchUntil}' took ${
-        new Date().getTime() - beforeFetch.getTime()
-      }ms`
-    );
 
     dataList = dataList.concat(fetchedData);
 
