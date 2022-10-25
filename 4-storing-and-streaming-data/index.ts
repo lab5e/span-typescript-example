@@ -107,6 +107,6 @@ const STREAM_WAIT_TIME = 2 * 60 * 1000;
     process.exit(1);
   });
 
-  console.error("Closed succesfully");
+  console.info("Closed succesfully");
   process.exit(0);
 })();

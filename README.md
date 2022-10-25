@@ -86,7 +86,7 @@ npm run example-3
 
 It should then start a MQTT client towards Span, and use the given credentials to stream data live from Span.
 
-### Example 4 - Streaming data
+### Example 4 - Storing data
 
 Example 4 can be found in the [4-storing-and-streaming-data](/4-storing-and-streaming-data/)
 
